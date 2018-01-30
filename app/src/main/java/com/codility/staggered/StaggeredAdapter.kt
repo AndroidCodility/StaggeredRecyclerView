@@ -32,7 +32,7 @@ class StaggeredAdapter(private val staggeredList: ArrayList<Staggered>) : Recycl
             textView.text = staggered.name;
 
             Glide.with(itemView.context).load(staggered.imageUrl)
-                    //.thumbnail(0.5f)
+                    .thumbnail(0.5f)
                     .into(imageView);
         }
     }
